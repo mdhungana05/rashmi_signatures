@@ -1,9 +1,63 @@
+<!DOCTYPE html>
 <html lang="ne">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>R A S H M I S I G N A T U R E S</title>
-    <h1>LOADING</h1>
-    <h2>PAGE UNDER CONSTRUCTION</h2>
-    <h3>info@rashmisignatures.com.np</h3>
+    <title>Rashmi Signatures - Under Construction</title>
+        <h3>info@rashmisignatures.com.np</h3>
+    <style>
+        /* पेजको बीचमा मिलाउनका लागि */
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f4f4f9;
+            font-family: Arial, sans-serif;
+        }
+
+        /* बाउन्स हुने बक्स */
+        .loading-container {
+            text-align: center;
+        }
+
+        .bouncing-text {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #333;
+            display: inline-block;
+            /* bounce नामको एनिमेसन ०.६ सेकेन्डमा निरन्तर चलिरहने */
+            animation: bounce 0.6s infinite alternate;
+        }
+
+        .email-text {
+            margin-top: 20px;
+            color: #666;
+            font-size: 1.2rem;
+        }
+
+        /* CSS Bounce Animation को नियम */
+        @keyframes bounce {
+            0% {
+                transform: translateY(0);
+                text-shadow: 0 5px 5px rgba(0,0,0,0.1);
+            }
+            100% {
+                transform: translateY(-20px); /* २० पिक्सेल माथि उफ्रिने */
+                text-shadow: 0 25px 10px rgba(0,0,0,0.05);
+            }
+        }
+    </style>
 </head>
+<body>
+
+    <div class="loading-container">
+        <!-- यो टेक्स्ट माथि तल बाउन्स हुनेछ -->
+        <div class="bouncing-text">PAGE UNDER CONSTRUCTION</div>
+        <div class="email-text">info@rashmisignatures.com.np</div>
+    </div>
+
+</body>
+</html>
